@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 
@@ -19,16 +19,37 @@ body{
 body .left{
     margin: 5px;
     border: 1px solid red;
+    border-radius: 2px;
     flex: 1;
     box-sizing: border-box;
     width: 666px;
     height: 600px;
+    background-color: #000;
 }
 body .right{
     margin: 5px;
     border: 1px solid blue;
+    border-radius: 2px;
     flex: 2;
     box-sizing: border-box;
     width: 666px;
     height: 600px;
+    background-color: #000;
 }
+
+footer{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+/* @media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+      }
+  } */
+
+  /* width: 50%;
+    height: 50%; */
