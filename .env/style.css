@@ -17,24 +17,40 @@ body{
 }
 
 body .left{
+    position: relative;
     margin: 5px;
     border: 1px solid red;
     border-radius: 2px;
     flex: 1;
     box-sizing: border-box;
-    width: 666px;
+    /* width: 666px; */
+    width: 50vw;
     height: 600px;
     background-color: #000;
 }
+
+body .left div{
+    position: relative;
+    width: 100%;
+}
+
 body .right{
+    position: relative;
     margin: 5px;
     border: 1px solid blue;
     border-radius: 2px;
     flex: 2;
     box-sizing: border-box;
-    width: 666px;
+    /* width: 666px; */
+    width: 50vw;
     height: 600px;
     background-color: #000;
+}
+
+body .right div{
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 footer{
@@ -46,13 +62,3 @@ footer{
 footer a{
     text-decoration: none;
 }
-
-
-/* @media only screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
-      }
-  } */
-
-  /* width: 50%;
-    height: 50%; */
