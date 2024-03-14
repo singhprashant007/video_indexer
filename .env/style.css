@@ -23,14 +23,15 @@ body .left{
     border-radius: 2px;
     flex: 1;
     box-sizing: border-box;
-    /* width: 666px; */
-    width: 50vw;
+    width: 666px;
+    /* width: 50vw; */
     height: 600px;
     background-color: #000;
 }
 
 body .left div{
     position: relative;
+    display: inline-block;
     width: 100%;
 }
 
@@ -41,8 +42,8 @@ body .right{
     border-radius: 2px;
     flex: 2;
     box-sizing: border-box;
-    /* width: 666px; */
-    width: 50vw;
+    width: 666px;
+    /* width: 50vw; */
     height: 600px;
     background-color: #000;
 }
