@@ -5,6 +5,11 @@ import {
     IWidgetStyle
 } from '@azure/video-indexer-widgets';
 
+import '@azure/video-indexer-widgets/dist/assets/custom-insights-config.schema.json';
+
+    // Importing standard insights widget schema
+import '@azure/video-indexer-widgets/dist/assets/vi-widget-config.schema';
+
 // Change two colors of the base style config
 const insightsStyleConfig : IBaseStyleConfig = {
     primary: 'yellow',
