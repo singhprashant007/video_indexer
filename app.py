@@ -30,7 +30,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 #   url = ".env/VID_20240306112442.txt"
 
 
-url = ".env/VID_20240306112442.txt"
+url = "VID_20240306112442.txt"
 with open(url, 'r') as file:
     content = file.read()
     #print(content)
