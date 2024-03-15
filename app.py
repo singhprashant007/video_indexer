@@ -46,7 +46,7 @@ text_splitter = CharacterTextSplitter.from_tiktoken_encoder(
 texts = text_splitter.split_text(news_article)
 
 docs = [Document(page_content=t) for t in texts]
-print(len(docs))
+#print(len(docs))
 
 
 
@@ -59,14 +59,13 @@ num_tokens = num_tokens_from_string(news_article, model_name)
 print(num_tokens)
 
 
-prompt_template = """Write a concise summary of the following
-Write the summary in Bullet points:
+prompt_template = """Write a summary of the following in Bullet points:
 
 
 {text}
 
 
-CONSCISE SUMMARY IN ENGLISH:"""
+SUMMARY IN ENGLISH:"""
 
 
 prompt = PromptTemplate(template=prompt_template, input_variables=["text"])
