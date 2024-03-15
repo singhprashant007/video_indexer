@@ -26,13 +26,13 @@ const config: IInsightsWidgetConfig = {
     style: style
 };
 
-this.insightsWidget = new InsightsWidget(
-    'container',
-    {
-        height: 780,
-        width: 580
-    },
-    config
-);
+// this.insightsWidget = new InsightsWidget(
+//     'container',
+//     {
+//         height: 780,
+//         width: 580
+//     },
+//     config
+// );
 
-this.insightsWidget.render();
+// this.insightsWidget.render();

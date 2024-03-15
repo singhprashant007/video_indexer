@@ -20,14 +20,21 @@ load_dotenv()
 
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-use_long_text = True
 
-if use_long_text:
-  url = "https://raw.githubusercontent.com/mauricio-seiji/Dataset-news-articles-pt-br/main/ciencia%20e%20tecnologia/30.txt"
-else:
-  url = "https://raw.githubusercontent.com/mauricio-seiji/Dataset-news-articles-pt-br/main/ciencia%20e%20tecnologia/22.txt"
+# # For URL
+# use_long_text = True
 
-news_article = urllib.request.urlopen(url).read().decode("utf-8")
+# if use_long_text:
+#   url = ".env/VID_20240306112442.txt"
+# else:
+#   url = ".env/VID_20240306112442.txt"
+
+
+url = ".env/VID_20240306112442.txt"
+with open(url, 'r') as file:
+    content = file.read()
+    #print(content)
+news_article = content #urllib.request.urlopen(url).read().decode("utf-8")
 
 model_name = "gpt-3.5-turbo"
 llm = ChatOpenAI(temperature=0, openai_api_key=OPENAI_API_KEY, model_name=model_name)
@@ -52,7 +59,8 @@ num_tokens = num_tokens_from_string(news_article, model_name)
 print(num_tokens)
 
 
-prompt_template = """Write a concise summary of the following:
+prompt_template = """Write a concise summary of the following
+Write the summary in Bullet points:
 
 
 {text}
@@ -76,4 +84,4 @@ summary = chain.run(docs)
 
 print(f"Chain type: {chain.__class__.__name__}")
 print(f"Run time: {monotonic() - start_time}")
-print(f"Summary: {textwrap.fill(summary, width=100)}")
+print(f"Summary: {textwrap.fill(summary, width=150)}")
