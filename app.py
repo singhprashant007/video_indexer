@@ -59,7 +59,7 @@ num_tokens = num_tokens_from_string(news_article, model_name)
 print(num_tokens)
 
 
-prompt_template = """Write a summary of the following in Bullet points:
+prompt_template = """Write a detailed summary of the following in Bullet points:
 
 
 {text}
