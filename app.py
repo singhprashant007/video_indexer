@@ -2,7 +2,7 @@ import os
 import urllib
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
-from langchain_community.llms import OpenAIChat
+from langchain_community.llms import OpenAIChat 
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain_community.chat_models import AzureChatOpenAI
