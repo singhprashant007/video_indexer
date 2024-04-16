@@ -56,7 +56,7 @@ def num_tokens_from_string(string: str, encoding_name: str) -> int:
     return num_tokens
 
 num_tokens = num_tokens_from_string(news_article, model_name)
-print(num_tokens)
+print("Number of Tokens in the Text:",num_tokens)
 
 
 prompt_template = """Write a detailed summary of the following in Bullet points:
