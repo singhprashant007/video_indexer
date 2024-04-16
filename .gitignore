@@ -2,5 +2,3 @@ venv
 .env
 /node_modules
 *.json
-*.txt
-!VID_20240306112442.txt
